@@ -91,6 +91,17 @@ public class CrudAppApplication {
 	}
 
 	private void updateStudent(StudentDAO studentDAO) {
+		int studentId = 1;
+		System.out.println("Getting student with id: " + studentId);
+		Student newStudent = studentDAO.findById(studentId);
+
+		System.out.println("Updating student ...");
+		newStudent.setFirstName("Ion");
+
+		studentDAO.update(newStudent);
+
+		System.out.println("Update student: " + newStudent);
+
 
 	}
 
