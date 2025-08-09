@@ -24,8 +24,9 @@ public class CrudAppApplication {
 			//createStudent(studentDAO);
 			//createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
+			//queryForStudents(studentDAO);
 
-			queryForStudents(studentDAO);
+			updateStudent(studentDAO);
 		};
 
 	}
@@ -86,6 +87,10 @@ public class CrudAppApplication {
 		for (Student newStudent : theStudents) {
 			System.out.println(newStudent);
 		}
+
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
 
 	}
 
