@@ -45,4 +45,16 @@ public class StudentDAOImplmentation implements StudentDAO {
         entityManager.merge(theStudent);
     }
 
+    @Override
+    @Transactional
+    public void delete(Integer id) {
+
+        // preluarea studentului din baza de date
+        Student theStudent = entityManager.find(Student.class, id);
+
+        // eliminarea studentului
+        entityManager.remove(theStudent);
+
+    }
+
 }
