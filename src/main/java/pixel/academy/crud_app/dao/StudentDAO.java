@@ -7,9 +7,10 @@ import java.util.List;
 public interface StudentDAO {
 
     void save(Student theStudent);
-    // comment
+
     Student findById(Integer id);
-    // comm 2
+
     List<Student> findAll();
-    //comm 3
+
+    void update(Student theStudent);
 }
