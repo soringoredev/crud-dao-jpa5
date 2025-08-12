@@ -89,6 +89,8 @@ public class CrudAppApplication {
 		}
 
 	}
+	// primitivele
+	// NON_PRIMITIVELE
 
 	private void updateStudent(StudentDAO studentDAO) {
 		int studentId = 1;

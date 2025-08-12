@@ -13,6 +13,7 @@ import java.util.List;
 public class StudentDAOImplmentation implements StudentDAO {
 
     private EntityManager entityManager;
+    String offffVALEU;
 
     @Autowired
     public StudentDAOImplmentation(EntityManager entityManager) {
