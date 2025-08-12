@@ -22,13 +22,13 @@ public class CrudAppApplication {
 
 		return runner -> {
 			//createStudent(studentDAO);
-			//createMultipleStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
 			//queryForStudents(studentDAO);
 			//updateStudent(studentDAO);
 			//deleteStudent(studentDAO);
 
-			deleteAllStudents(studentDAO);
+			//deleteAllStudents(studentDAO);
 		};
 
 	}
@@ -51,12 +51,14 @@ public class CrudAppApplication {
 
 	private void createMultipleStudents(StudentDAO studentDAO) {
 		System.out.println("Creating 3 st");
-		Student nasureSt109 = new Student("Maloren", "Levit", "iep@p.djrd");
-		Student nasure4St109 = new Student("Maloren", "Levit", "iep@p.djrd");
+		Student st1 = new Student("Andrei", "Roibu", "abc@p.djrd");
+		Student st2 = new Student("Maria", "Gribincea", "def@p.djrd");
+		Student st3 = new Student("Mihai", "Avadanii", "jpg@p.djrd");
 
-		System.out.println("Savex");
-		studentDAO.save(nasure4St109);
-		studentDAO.save(nasureSt109);
+		System.out.println("Save");
+		studentDAO.save(st1);
+		studentDAO.save(st2);
+		studentDAO.save(st3);
 
 	}
 
