@@ -10,13 +10,13 @@ import pixel.academy.crud_app.entity.Student;
 import java.util.List;
 
 @Repository
-public class StudentDAOImplmentation implements StudentDAO {
+public class StudentDAOImplementation implements StudentDAO {
 
     private EntityManager entityManager;
     String offffVALEU;
 
     @Autowired
-    public StudentDAOImplmentation(EntityManager entityManager) {
+    public StudentDAOImplementation(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 
